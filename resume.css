@@ -60,7 +60,7 @@ nav ul li:hover{
 .cover h1{
     position:absolute;
     margin-top:150px;
-    margin-left:200px;
+    margin-left:300px;
     font-size: 3rem;
     color:rgb(2, 50, 52);
     background-color:#d9e9f6 ;
@@ -86,19 +86,41 @@ main{
 }
 main p{
     line-height: 1.5; /* Improves readability */
-    text-align: justify; /* Optional: for even text distribution */
+    text-align: justify; /*  For even text distribution */
+}
+
+#about-me ul li{
+
+    line-height: 1.5; /* Improves readability */
+    list-style-type: none;
+    margin:3px;
+
+}
+
+#about-me ul li::before{
+    content:"★ ";
+    color:rgb(255, 179, 0);
+    padding:5px;
 }
 
 table{
     width:100%;
     table-layout: fixed;
     border-collapse: collapse;
-    /* border: solid 1px crimson; */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
 }
 th,td{
     border: solid 1px gray;
     text-align: center;
     /* text-wrap:nowrap; */
+    padding:10px;
+    line-height: 1.5; /* Improves readability */
+}
+th{
+    background-color:rgb(2, 50, 52) ;
+    color:white;
+    
+    
 }
 
 footer{
@@ -114,4 +136,7 @@ footer{
 footer a{
     color:white;
     cursor:pointer;
+}
+h2{
+    color:rgb(2, 50, 52);
 }
