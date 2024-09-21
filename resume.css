@@ -127,13 +127,12 @@ th,td{
     /* text-wrap:nowrap; */
     padding:10px;
     line-height: 1.5; /* Improves readability */
+    word-wrap: break-word;
 }
 th{
     background-color:rgb(2, 50, 52) ;
     color:white;
-    
-    
-}
+   }
 
 footer{
     padding:50px;
