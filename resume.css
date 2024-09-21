@@ -129,9 +129,15 @@ footer{
     color:white;
     text-align: center;
 }
-.projects a{
+#my-projects a{
     display:block;
     margin:10px;
+    text-decoration: none;
+}
+#my-projects a::before{
+    content:"▸▸ ";
+    color:rgb(255, 170, 0);
+    font-size: 1.1rem;
 }
 footer a{
     color:white;
