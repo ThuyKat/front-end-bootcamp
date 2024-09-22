@@ -131,24 +131,30 @@ main p{
     padding:5px;
     
 }
-
+.table-container{
+    width:100%;
+    overflow-x:auto;
+}
 table{
     width:100%;
-    table-layout: fixed;
+    /* table-layout: fixed; */
     border-collapse: collapse;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    
+
 }
-th,td{
+td{
     border: solid 1px gray;
     text-align: center;
-    /* text-wrap:nowrap; */
     padding:10px;
     line-height: 1.5; /* Improves readability */
     word-wrap: break-word;
+   
 }
-th{
+.thead td{
     background-color:rgb(2, 50, 52) ;
     color:white;
+    word-wrap: break-word;
    }
 
 footer{
