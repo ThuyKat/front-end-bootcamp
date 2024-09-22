@@ -88,8 +88,8 @@ nav ul li:hover{
 }
 
 .avatar img{
-    height:150px;
-    width:150px; 
+    /* height:150px;
+    width:150px;  */
     border-radius: 50%;
     /* margin-top:200px;
     margin-left: 20px; */
