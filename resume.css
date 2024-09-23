@@ -51,8 +51,8 @@ nav ul li:hover{
 .cover-container{
     background-image: url(leaf-1401140_1280.jpg);
     /* background-position: 0px 0px; */
-    background-size:cover;
-    object-fit: cover;
+    background-size:cover; /*cover the whole container*/
+    object-fit: cover; /*crop and fill*/
 
 }
 .cover-wrapper{

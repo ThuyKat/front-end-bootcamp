@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner Layout</title>
+    <style>
+        
+        html{
+            padding:10px;/* center the body*/
+        }
+        body {
+            box-sizing: border-box;
+            max-width: 1600px;
+            padding: 0;
+            width: 100%;
+            margin: 0 auto;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+            border: solid 1px #dfdfdd;
+            border-radius: 5px;
+        }
+
+        .grid-container {
+            height: 94vh;
+            display: grid;
+            margin: 3%;
+            grid-template-rows: repeat(12, 1fr);
+            gap: 15px;
+        }
+
+        .grid-container>div:not(:nth-child(3)) {
+
+            background-color: #dfdfdd;
+        }
+
+        .grid-container>div:nth-child(1) {
+            grid-row: 1/2;
+        }
+
+        .grid-container>div:nth-child(2) {
+            grid-row: 2/8;
+        }
+
+        .grid-container>div:nth-child(3) {
+            grid-row: 8/11;
+        }
+
+        .grid-container>div:nth-child(4) {
+            grid-row: 11/13;
+        }
+
+        .flex-container {
+            display: flex;
+            gap: 15px;
+        }
+
+        .inner-grid-container {
+            width: 40%;
+            display: grid;
+            gap: 10px;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: 2fr 3fr 2fr;
+            height: 100%;
+
+        }
+
+        .flex-container>div:nth-child(1) {
+            width: 100%;
+            background-color: #dfdfdd;
+        }
+
+        .inner-grid-container div {
+            background-color: #dfdfdd;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div></div>
+        <div></div>
+        <div class="flex-container">
+            <div></div>
+            <div class="inner-grid-container">
+
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+
+            </div>
+        </div>
+        <div></div>
+    </div>
+</body>
+
+</html>

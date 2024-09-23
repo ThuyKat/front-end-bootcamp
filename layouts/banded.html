@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banded Layout</title>
+    <style>
+        body{
+            box-sizing: border-box;
+            padding:0;
+            margin:0 auto;
+            max-width: 1600px;
+            width:100%;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+            border:solid 1px #dfdfdd;
+        }
+        .flex-container-outer{
+            height:96vh;
+            display:flex;
+            flex-direction: column;
+            margin:4%; 
+        }
+        .flex  {
+            height:100%;
+            margin-bottom:7px ; /* equal to gap between inner flex items  */
+        }
+        .row-1{
+            height:20%;
+            display:flex;
+            justify-content: space-between;
+        }
+        .row-1 div{
+            /* border:solid 1px crimson; */
+            background-color:#dfdfdd;
+        }
+        .row-1 .child-1{
+            width:20%;   
+        }
+        .row-1 .child-2{
+            width:30%;
+        }
+        .row-2{
+            background-color: #dfdfdd;
+            height:100vh
+            
+        }
+        .row-3{
+            display:flex;
+            gap:7px;  /* equal to margin-bottom of flex items */
+            height:80%;
+        }
+        .row-3 div{
+            background-color: #dfdfdd;
+            /* width:100%; */
+        }
+        .row-3 .child-1{
+            width:calc(40% - 10px);
+        }
+        .row-3 .child-2{
+            width:100%;
+        }
+        .row-4{
+            margin-bottom: 0;
+            display: flex;
+            gap:7px;  /* equal to margin-bottom of flex items */
+            height:80%;
+
+        }
+        .row-4 div{
+            background-color: #dfdfdd;
+        }
+        .row-4 .child-2{
+            width:calc(40% - 10px);
+
+        }
+        .row-4 .child-1{
+            width:100%;
+        }
+
+
+    </style>
+</head>
+<body>
+   
+    <div class ="flex-container-outer">
+        <div class="flex row-1">
+            
+            <div class="child-1"></div>
+            <div class="child-2"></div>
+        </div>
+        <div class="flex row-2"></div>
+        <div class="flex row-3">
+            <div class="child-1"></div>
+            <div class="child-2"></div>
+        </div>
+        <div class="flex row-4">
+            <div class="child-1"></div>
+            <div class="child-2"></div>
+        </div>  
+    </div> 
+
+</body>
+</html>
