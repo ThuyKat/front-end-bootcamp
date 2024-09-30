@@ -33,7 +33,7 @@ option 4: transform:scale(0);visibility:hidden -> transform:scale(1);visibility:
 --> other flex-direction : row-reverse, column-reverse
 --> justify-content: follow the flex-direction, one of very commonly used : spaced-evenly
 --> align-content: baseline -> all texts are on the same line ( inside child element, outside child element)
-- Content is the most important  in html, there for it wont resize -> need to use flex-wrap property
+- Content is the most important  in html, therefor it wont be resized -> need to use flex-wrap property
 
 2. Grid
 
