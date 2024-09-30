@@ -21,7 +21,7 @@ option 4: transform:scale(0);visibility:hidden -> transform:scale(1);visibility:
 8. position relative + position absolute -> need to give outer container width and height so that the absolute positioned element stays inside the container.
 9. top+left+transform:translate -> centralised an element inside a container
 ## Responsive CSS
-1. @ Media tag: similar to adding another internal CSS which is only in use in some specific conditions. Since Media tag is declared at the bottom of css, hence it has higher priority 
+1. @ Media tag: similar to adding another internal CSS which is only in use in some specific conditions. Since Media tag is declared at the bottom of html file, it has higher priority 
 2. Two type of responsive styling: mobile-first( use min-width as a condition) or desktop-first( use max-width as a condition)
 
 ## Some notes on Flex box and Grid
